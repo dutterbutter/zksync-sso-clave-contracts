@@ -135,4 +135,6 @@ contract AAFactory {
     initialValidators[1] = sessionKeyData;
     return deployProxySsoAccount(uniqueId, initialValidators, ownerKeys);
   }
+
+  receive() external payable {}
 }
